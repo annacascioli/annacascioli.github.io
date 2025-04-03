@@ -17,13 +17,11 @@ margin-right: 15%;}
         width: 50%; /* Adjust to your preference */
         display: inline-block;
         vertical-align: top;
-        border: 2px solid blue;
     }
 
     /* Reduce image size and keep it aligned */
     div[style*="display: inline-block"][style*="text-align: right"] {
         width: 20%; /* Keeps the image aligned */
-      border: 2px solid red;
     }
 
     img {
