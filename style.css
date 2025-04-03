@@ -10,33 +10,34 @@ margin-right: 15%;}
 <!--@media all and (min-width:1000px) { html { font-size: 16px; } } -->
 <!--@media all and (max-width:520px) { html{ font-size: 10px; } -->
 <!--#container {margin-left: 1%; margin-right: 1%;}}-->
+
 /* Media query for mobile devices */
 @media (max-width: 768px) {
-    /* Reduce font size for mobile */
+    /* Adjust text size for mobile */
     #container p {
-        font-size: 0.9em; /* Make text smaller */
+        font-size: 0.9em; /* Make text smaller on mobile */
     }
 
-    /* Adjust text width and keep the image on the right */
+    /* Ensure the text and image stay side by side */
     #container > div {
-        display: inline-block;
-        vertical-align: top;
+        display: inline-block; /* Keep them inline */
+        vertical-align: top;   /* Keep them aligned at the top */
     }
 
-    /* Text takes up 60% on mobile */
+    /* Text width on mobile (adjust to take more space) */
     #container > div:first-child {
         width: 60%;
     }
 
-    /* Image takes up 35% on mobile */
+    /* Image width on mobile (adjust to take less space) */
     #container > div:last-child {
         width: 35%;
     }
 
-    /* Image styling */
+    /* Ensure the image does not stretch */
     #container img {
-        width: 100%; /* Ensure image doesn't stretch */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%;
+        height: auto;
     }
 }
 
