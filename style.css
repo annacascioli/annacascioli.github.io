@@ -14,20 +14,20 @@ margin-right: 15%;}
             text-align: left;}
     /* Reduce text container width */
     div[style*="display: inline-block"][style*="text-align: left"] {
-        width: 60%; /* Adjust to your preference */
+        width: 50%; /* Adjust to your preference */
         display: inline-block;
         vertical-align: top;
-        border: 2px solid red;
+        border: 2px solid blue;
     }
 
     /* Reduce image size and keep it aligned */
     div[style*="display: inline-block"][style*="text-align: right"] {
-        width: 30%; /* Keeps the image aligned */
+        width: 20%; /* Keeps the image aligned */
       border: 2px solid blue;
     }
 
     img {
-        width: 40%; /* Reduce the image size */
+        width: 30%; /* Reduce the image size */
         height: auto;
     }
 }
