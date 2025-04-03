@@ -7,8 +7,8 @@ margin-left: 15%;
 text-align: justify;
 margin-right: 15%;}
 /* This forces the container to adapt to the window size; i.e. makes the webpage somehow 'adaptive' to the device you use. */
-@media all and (min-width:1000px) { html { font-size: 16px; } }
-@media all and (max-width:520px) { html{ font-size: 14px; }
+<!--@media all and (min-width:1000px) { html { font-size: 16px; } } -->
+<!--@media all and (max-width:520px) { html{ font-size: 14px; } -->
 #container {margin-left: 1%; margin-right: 1%;}}
 /* This defines some general information about the webpage, i.e. the font. */
 body {
