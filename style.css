@@ -1,5 +1,5 @@
 /* This says that the font-size depends on the width of your screen. */
-html { font-size: 10px; }
+html { font-size: 8px; }
 /* This defines the big container for all content. */
 #container {
 margin-top: 150px;
