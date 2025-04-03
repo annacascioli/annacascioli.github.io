@@ -37,7 +37,7 @@ html { font-size: 16px; }
 
     /* Image styling for mobile */
     #container img {
-        width: 60%;  /* Image width for mobile (you can adjust this) */
+        width:40%;  /* Image width for mobile (you can adjust this) */
         height: auto;
     }
 }
