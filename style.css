@@ -11,32 +11,33 @@ html { font-size: 16px; }
 <!--@media all and (max-width:520px) { html{ font-size: 10px; } -->
 <!--#container {margin-left: 1%; margin-right: 1%;}}-->
 
-/* For the container: text and image side by side */
+/* Base container setup */
 #container {
     margin-top: 100px;
     margin-left: 15%;
     margin-right: 15%;
     text-align: justify;
-    display: flex; /* Flex layout to keep them side by side */
+    display: flex;
     justify-content: space-between;
 }
 
-/* Mobile responsiveness (max-width 768px) */
+/* For the smaller screen size (mobile devices) */
 @media (max-width: 768px) {
-    /* Smaller text size for mobile devices */
+    /* Ensures text remains left-aligned and smaller */
     #container p {
-        font-size: 0.85em; /* Adjust font size for smaller screens */
+        font-size: 0.85em;  /* Smaller text for mobile */
     }
 
-    /* Ensure text and image remain side by side */
+    /* Prevent stacking: keep the elements side by side */
     #container > div {
         display: inline-block;
-        width: 48%;  /* Adjust the width to fit both elements */
+        width: 48%; /* Adjust to fit both the image and text */
+        vertical-align: top; /* Keep everything aligned to the top */
     }
 
-    /* Adjust the image size */
+    /* Image styling for mobile */
     #container img {
-        width: 60%; /* Adjust the image width for mobile */
+        width: 60%;  /* Image width for mobile (you can adjust this) */
         height: auto;
     }
 }
