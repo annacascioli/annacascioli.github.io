@@ -37,10 +37,11 @@ html { font-size: 16px; }
 
     /* Image styling for mobile */
     #container img {
-        width:40%;  /* Image width for mobile (you can adjust this) */
+        width: 60%;  /* Image width for mobile */
         height: auto;
     }
 
+    /* Adjust margins for mobile */
     #container {
         margin-left: 5%;  /* Reduce the left margin */
         margin-right: 5%; /* Reduce the right margin */
@@ -52,7 +53,6 @@ html { font-size: 16px; }
         padding: 0;
     }
 }
-
 
 /* This defines some general information about the webpage, i.e. the font. */
 body {
