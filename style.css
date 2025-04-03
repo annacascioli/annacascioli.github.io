@@ -40,6 +40,17 @@ html { font-size: 16px; }
         width:40%;  /* Image width for mobile (you can adjust this) */
         height: auto;
     }
+
+    #container {
+        margin-left: 5%;  /* Reduce the left margin */
+        margin-right: 5%; /* Reduce the right margin */
+    }
+
+    /* Make sure there's no extra margin/padding on the individual divs */
+    #container > div {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 
