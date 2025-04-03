@@ -14,7 +14,7 @@ margin-right: 15%;}
             text-align: left;}
     /* Reduce text container width */
     div[style*="display: inline-block"][style*="text-align: left"] {
-        width: 50%; /* Adjust to your preference */
+        width: 40%; /* Adjust to your preference */
         display: inline-block;
         vertical-align: top;
     }
@@ -22,6 +22,7 @@ margin-right: 15%;}
     /* Reduce image size and keep it aligned */
     div[style*="display: inline-block"][style*="text-align: right"] {
         width: 20%; /* Keeps the image aligned */
+      border: 2px solid red;
     }
 
     img {
