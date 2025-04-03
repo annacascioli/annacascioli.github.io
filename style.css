@@ -12,30 +12,6 @@ margin-right: 15%;}
 <!--#container {margin-left: 1%; margin-right: 1%;}}-->
 
 
-/* Mobile view (screen size less than 768px) */
-@media (max-width: 768px) {
-    /* Adjust the container layout for mobile */
-    #container {
-        display: flex;
-        flex-direction: row; /* Ensure text and image stay on the same line */
-        justify-content: space-between;
-        margin-left: 5%;  /* Reduce the left margin for mobile */
-        margin-right: 5%; /* Reduce the right margin for mobile */
-    }
-
-    /* Adjust text size for mobile */
-    #container p {
-        font-size: 14px;  /* Reduce the font size for mobile */
-    }
-
-    /* Adjust the image size for mobile */
-    #container img {
-        width: 45%;  /* Make the image smaller for mobile */
-        height: auto;
-    }
-
-}
-
 
 /* This defines some general information about the webpage, i.e. the font. */
 body {
