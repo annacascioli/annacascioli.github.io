@@ -21,38 +21,38 @@ html { font-size: 16px; }
     justify-content: space-between;
 }
 
-/* For the smaller screen size (mobile devices) */
+/* Mobile view (screen size less than 768px) */
 @media (max-width: 768px) {
-    /* Ensures text remains left-aligned and smaller */
+    /* Ensure text is smaller on mobile */
     #container p {
         font-size: 0.85em;  /* Smaller text for mobile */
     }
 
-    /* Prevent stacking: keep the elements side by side */
+    /* Keep the text and image side by side, reduce the image size */
     #container > div {
-        display: inline-block;
-        width: 48%; /* Adjust to fit both the image and text */
-        vertical-align: top; /* Keep everything aligned to the top */
+        width: 48%; /* Adjust to fit text and image side by side */
     }
 
-    /* Image styling for mobile */
+    /* Image sizing for mobile devices */
     #container img {
-        width: 60%;  /* Image width for mobile */
+        width: 50%;  /* Make the image smaller to fit better */
         height: auto;
     }
 
     /* Adjust margins for mobile */
     #container {
-        margin-left: 5%;  /* Reduce the left margin */
-        margin-right: 5%; /* Reduce the right margin */
+        margin-left: 5%;  /* Reduce left margin */
+        margin-right: 5%; /* Reduce right margin */
     }
 
-    /* Make sure there's no extra margin/padding on the individual divs */
+    /* Prevent stacking and adjust layout for mobile */
     #container > div {
+        display: inline-block; /* Prevent stacking */
+        vertical-align: top; /* Keep everything aligned to the top */
         margin: 0;
-        padding: 0;
     }
 }
+
 
 /* This defines some general information about the webpage, i.e. the font. */
 body {
