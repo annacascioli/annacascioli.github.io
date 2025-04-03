@@ -13,7 +13,7 @@ margin-right: 25%;}
 /* This defines some general information about the webpage, i.e. the font. */
 body {
 font-family: sans-serif;
-line-height: 1.45;}
+line-height: 1.25;}
 /* h2 and h3 are tags used for the titles of your webpage; h3 should be smaller than h2 (there is also a biggest one, h1, that I don't use) */
 h2 {
 text-align: left;
