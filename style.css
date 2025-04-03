@@ -7,9 +7,39 @@ margin-left: 15%;
 text-align: justify;
 margin-right: 15%;}
 /* This forces the container to adapt to the window size; i.e. makes the webpage somehow 'adaptive' to the device you use. */
-@media all and (min-width:1000px) { html { font-size: 16px; } } 
-@media all and (max-width:520px) { html{ font-size: 10px; } 
-#container {margin-left: 1%; margin-right: 1%;}}
+<!--@media all and (min-width:1000px) { html { font-size: 16px; } } -->
+<!--@media all and (max-width:520px) { html{ font-size: 10px; } -->
+<!--#container {margin-left: 1%; margin-right: 1%;}}-->
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    /* Reduce font size for mobile */
+    #container p {
+        font-size: 0.9em; /* Make text smaller */
+    }
+
+    /* Adjust text width and keep the image on the right */
+    #container > div {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    /* Text takes up 60% on mobile */
+    #container > div:first-child {
+        width: 60%;
+    }
+
+    /* Image takes up 35% on mobile */
+    #container > div:last-child {
+        width: 35%;
+    }
+
+    /* Image styling */
+    #container img {
+        width: 100%; /* Ensure image doesn't stretch */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
 /* This defines some general information about the webpage, i.e. the font. */
 body {
 font-family: sans-serif;
