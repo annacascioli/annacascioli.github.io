@@ -10,21 +10,26 @@ margin-right: 15%;}
 <!--@media all and (min-width:1000px) { html { font-size: 16px; } } -->
 @media (max-width:768px) { html{ font-size: 8px; } 
 #container {margin-top: 50px;
-  margin-left: 1%; margin-right: 1%;}
-    div[style*="display: inline-block"] {
-        width: 80%;  /* Reduce the text width */
+  margin-left: 1%; margin-right: 1%;
+            text-align: left;}
+    /* Reduce text container width */
+    div[style*="display: inline-block"][style*="text-align: left"] {
+        width: 70%; /* Adjust to your preference */
         display: inline-block;
         vertical-align: top;
     }
 
-    div[style*="text-align: right"] {
-        width: 40%;  /* Keep the image on the right */
+    /* Reduce image size and keep it aligned */
+    div[style*="display: inline-block"][style*="text-align: right"] {
+        width: 30%; /* Keeps the image aligned */
     }
 
     img {
-        width: 60%;  /* Make the image smaller */
+        width: 80%; /* Reduce the image size */
+        height: auto;
     }
 }
+
 
 
 
