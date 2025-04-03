@@ -21,35 +21,33 @@ html { font-size: 16px; }
     justify-content: space-between;
 }
 
+
 /* Mobile view (screen size less than 768px) */
 @media (max-width: 768px) {
-    /* Ensure text is smaller on mobile */
+    /* Adjust the container layout for mobile */
+    #container {
+        display: flex;
+        flex-direction: row; /* Ensure text and image stay on the same line */
+        justify-content: space-between;
+        margin-left: 5%;  /* Reduce the left margin for mobile */
+        margin-right: 5%; /* Reduce the right margin for mobile */
+    }
+
+    /* Adjust text size for mobile */
     #container p {
-        font-size: 0.85em;  /* Smaller text for mobile */
+        font-size: 14px;  /* Reduce the font size for mobile */
     }
 
-    /* Keep the text and image side by side, reduce the image size */
-    #container > div {
-        width: 48%; /* Adjust to fit text and image side by side */
-    }
-
-    /* Image sizing for mobile devices */
+    /* Adjust the image size for mobile */
     #container img {
-        width: 50%;  /* Make the image smaller to fit better */
+        width: 45%;  /* Make the image smaller for mobile */
         height: auto;
     }
-
-    /* Adjust margins for mobile */
-    #container {
-        margin-left: 5%;  /* Reduce left margin */
-        margin-right: 5%; /* Reduce right margin */
-    }
-
-    /* Prevent stacking and adjust layout for mobile */
+    
+    /* Ensure that both text and image remain aligned side by side */
     #container > div {
         display: inline-block; /* Prevent stacking */
-        vertical-align: top; /* Keep everything aligned to the top */
-        margin: 0;
+        vertical-align: top;   /* Align both elements to the top */
     }
 }
 
