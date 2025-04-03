@@ -1,45 +1,46 @@
 /* This says that the font-size depends on the width of your screen. */
 html { font-size: 16px; }
 /* This defines the big container for all content. */
-#container {
+<!--#container {
 margin-top: 100px;
 margin-left: 15%;
 text-align: justify;
-margin-right: 15%;}
+margin-right: 15%;}-->
 /* This forces the container to adapt to the window size; i.e. makes the webpage somehow 'adaptive' to the device you use. */
 <!--@media all and (min-width:1000px) { html { font-size: 16px; } } -->
 <!--@media all and (max-width:520px) { html{ font-size: 10px; } -->
 <!--#container {margin-left: 1%; margin-right: 1%;}}-->
 
-/* Media query for mobile devices */
+/* General styles for the container */
+#container {
+    margin-top: 100px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: justify;
+    display: flex;  /* Use flex to keep text and image side by side */
+    justify-content: space-between;
+}
+
+/* This will make sure the image and text behave correctly on mobile */
 @media (max-width: 768px) {
-    /* Adjust text size for mobile */
+    /* Reduce font size for text on mobile */
     #container p {
-        font-size: 0.9em; /* Make text smaller on mobile */
+        font-size: 0.85em; /* Adjust the text size for smaller screens */
     }
 
-    /* Ensure the text and image stay side by side */
+    /* Make sure the text and image do not stack */
     #container > div {
-        display: inline-block; /* Keep them inline */
-        vertical-align: top;   /* Keep them aligned at the top */
+        display: inline-block;
+        width: 48%;  /* Reduce width to make both the text and image fit */
     }
 
-    /* Text width on mobile (adjust to take more space) */
-    #container > div:first-child {
-        width: 60%;
-    }
-
-    /* Image width on mobile (adjust to take less space) */
-    #container > div:last-child {
-        width: 35%;
-    }
-
-    /* Ensure the image does not stretch */
+    /* The image should be smaller */
     #container img {
-        width: 100%;
+        width: 100%; /* The image will take 100% of its parent width */
         height: auto;
     }
 }
+
 
 /* This defines some general information about the webpage, i.e. the font. */
 body {
