@@ -23,6 +23,7 @@ margin-right: 15%;}
     /* Reduce image size and keep it aligned */
     div[style*="display: inline-block"][style*="text-align: right"] {
         width: 10%; /* Keeps the image aligned */
+       vertical-align: top;
     }
 
     img {
