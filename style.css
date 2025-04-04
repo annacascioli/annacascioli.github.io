@@ -42,7 +42,6 @@ margin-right: 15%;}
 @media (min-width: 768px) and (max-width: 1024px) {
   html {
     font-size: 10px; /* Adjust font size for iPad */
-    background-color: lightblue;
   }
 
   #container {
