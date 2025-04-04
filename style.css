@@ -11,7 +11,6 @@ margin-right: 15%;}
 @media (max-width: 768px) {
   html {
     font-size: 8px;
-    background-color: lightblue;
   }
 
   #container {
@@ -23,20 +22,18 @@ margin-right: 15%;}
 
   /* Force override of inline style widths */
   div[style*="text-align: left"] {
-    width: 55% !important;
+    width: 55%;
     display: inline-block;
     vertical-align: top;
-    border: 2px solid red;
   }
 
   div[style*="text-align: right"] {
-    width: 40% !important;
+    width: 40%;
     vertical-align: top;
-    border: 2px solid green;
   }
 
   img {
-    width: 100% !important;
+    width: 100%;
     height: auto;
   }
 }
