@@ -22,18 +22,18 @@ margin-right: 15%;}
 
   /* Force override of inline style widths */
   div[style*="text-align: left"] {
-    width: 55%;
+    width: 55% !important;
     display: inline-block;
     vertical-align: top;
   }
 
   div[style*="text-align: right"] {
-    width: 40%;
+    width: 40% !important;
     vertical-align: top;
   }
 
   img {
-    width: 100%;
+    width: 100% !important;
     height: auto;
   }
 }
