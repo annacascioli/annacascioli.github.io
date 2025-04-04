@@ -10,8 +10,7 @@ margin-right: 15%;}
 <!--@media all and (min-width:1000px) { html { font-size: 16px; } } -->
 @media (max-width:768px) { html{ font-size: 8px; } 
 #container {margin-top: 50px;
-  margin-left: 1%; margin-right: 1%;
-            text-align: left;}
+  margin-left: 1%; margin-right: 1%;}
     /* Reduce text container width */
     div[style*="display: inline-block"][style*="text-align: left"] {
         width: 30%; /* Adjust to your preference */
